@@ -30,7 +30,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- <suiteXmlFile>testng_logging.xml</suiteXmlFile> -->
-						<suiteXmlFile>testng_POM.xml</suiteXmlFile>
+						<suiteXmlFile>testng_realDemoApp.xml</suiteXmlFile>
 
 					</suiteXmlFiles>
 				</configuration>
