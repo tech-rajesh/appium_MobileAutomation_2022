@@ -22,7 +22,7 @@ public class BaseTest_RealDevices_InstallApp {
 		
 		DesiredCapabilities cap = new DesiredCapabilities();
 		//cap.setCapability("deviceName", "GameMachine");
-		cap.setCapability("udid", "c60c1a73");
+		cap.setCapability("udid", "c60c1a73");						//adb devices
 		cap.setCapability("platformName", "Android");
 		//cap.setCapability("platformVersion", "12.0");			//API -31
 		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "GameMachine");
@@ -49,7 +49,15 @@ public class BaseTest_RealDevices_InstallApp {
 //		cap.setCapability("appPackage", "com.coloros.calculator");
 //		cap.setCapability("appActivity", "com.android.calculator2.Calculator");
 		
-		cap.setCapability(MobileCapabilityType.APP, "D:\\Jar_files\\appium\\APKFile\\ApiDemos-debug.apk");
+		//Demp application
+		//io.appium.android.apis/io.appium.android.apis.ApiDemos
+		
+		//installation
+		//cap.setCapability(MobileCapabilityType.APP, "D:\\Jar_files\\appium\\APKFile\\ApiDemos-debug.apk");
+		
+		cap.setCapability("appPackage", "io.appium.android.apis");
+		cap.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
+		
 		
 		//Driver instance
 		driver = new AppiumDriver<MobileElement>(new URL(appium_server), cap);

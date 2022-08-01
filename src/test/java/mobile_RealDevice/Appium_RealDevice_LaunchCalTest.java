@@ -19,6 +19,7 @@ public class Appium_RealDevice_LaunchCalTest extends BaseTest_RealDevices{
 		
 		driver.findElement(By.id("digit_8")).click();
 		
+		driver.findElementById("digit_8").click();
 		
 		//operation
 		driver.findElement(By.id("op_add")).click();

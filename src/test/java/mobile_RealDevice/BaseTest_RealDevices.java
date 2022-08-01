@@ -46,6 +46,8 @@ public class BaseTest_RealDevices {
 //		  mCurrentFocus=Window{b2564d5 u0 com.google.android.calculator/com.android.calculator2.Calculator}
 		
 		//com.coloros.calculator/com.android.calculator2.Calculator
+		
+		//com.coloros.calculator/com.android.calculator2.Calculator
 		cap.setCapability("appPackage", "com.coloros.calculator");
 		cap.setCapability("appActivity", "com.android.calculator2.Calculator");
 		
